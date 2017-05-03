@@ -1,0 +1,17 @@
+body {
+	background-color: #e8e6da;
+}
+
+h1 {
+	color: #1ca2ce;
+}
+
+.container {
+	width : 50%;
+	margin: auto;
+	text-align: center;
+}
+
+.main {
+	background-color: #333;
+}
