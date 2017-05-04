@@ -1,10 +1,14 @@
 <html>
 <head>
+
 <!-- 	add jQuery library -->
  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
  
 <!--  link stylesheet -->
 <link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Fjalla+One|Raleway:900|Karla:400" rel="stylesheet">
 
 <title>Bridget's Crystal Collector</title>
 
@@ -12,36 +16,47 @@
 <body>
 
 <div class=container>
-	<h1>Crystal Collector</h1>
+	<h1>Crystal<br>Collector</h1>
 	
 	<div class=main>
-		<h2>HOW TO PLAY</h2>
+		<div class=main-left>
+		<h2>GAME PLAY</h2>
 		
-		<p>You'll be given a number at the start of each game.<br>
-		There are four crystals below. By clicking on crystal, you add a specific amount of points to your total score.<br>
-		To win, match your total score to the random number. You'll lose the game if your total score goes above the random number.<br>
+		<p>1. You'll be given a number at the start of each game.<br>
+		2. There are four crystals below. By clicking on crystal,<br>you add a specific amount of points to your total score.<br>
+		3. To win, match your total score to the random number.<br>You'll lose the game if your total score goes above the random number.</p>
+		
+		<div class=notes>
 		The value of the crystals will be hidden until you click them.<br>
-		Each time the game restarts, the value of the crystals will change.</p>
+		Each time the game restarts, the value of the crystals will change.
+		</div>
+		
+		</div>
+		
 	</div>
-	
-	<div class=number1></div>
-	<div class=number2></div>
+
+	<div id=number1></div>
+	<div id=number2></div>
 	
 	<div class=crystals>
-		<img src="assets/images/crystal-blue.png" width=100px>
-		<img src="assets/images/crystal-yellow.png" width=100px>
-		<img src="assets/images/crystal-green.png" width=100px>
-		<img src="assets/images/crystal-red.png" width=100px>
+		<button id=blue-crystal><img src="assets/images/crystal-blue.png" width=100px></button>
+		<button id=yellow-crystal><img src="assets/images/crystal-yellow.png" width=100px></button>
+		<button id=green-crystal><img src="assets/images/crystal-green.png" width=100px></button>
+		<button id=red-crystal><img src="assets/images/crystal-red.png" width=100px></button>
+	</div>
+	
+	<div class=leftWin>
+		<div id=winText></div>
+		<div id=win>WINS: </div>
+	</div>
+	<div class=rightLose>
+		<div id=loseText></div>
+		<div id=lose>LOSSES: </div>
 	</div>
 	
 </div>
-<!-- Begin Javascript -->
-<script type="text/javascript">
 
-var wins = 0;
-var losses = 0;
-	
-</script>
-
+<!-- Javascript -->
+<script src="assets/javascript/game.js"></script>
 </body>
 </html>
