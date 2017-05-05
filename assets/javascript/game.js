@@ -13,6 +13,9 @@ var yellow = getNumber(1,12);
 var green = getNumber(1,12);
 var red = getNumber(1,12);
 
+// helpful for looking at crystal values
+console.log(blue, yellow, green, red);
+
 // beginning game value
 var totalNumber = 0;
 
@@ -32,7 +35,7 @@ $("#number2").text(totalNumber);
 	function getValues(){
 	// display random number
 		$("#number1").text(randomNumber);
-	
+		 
 	// assign click events that add the value of each crystal to totalNumber
 		$("#blue-crystal").on("click", function(){
 			totalNumber += blue;
